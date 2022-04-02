@@ -20,7 +20,7 @@ class Node(object):
         return sum(distances)/2
 
     def force(self,t,mult,smoothRadius):
-        total = np.zeros(2)
+        total = np.zeros(3)
         for out in self.bound.values():
             f = out[0].pos - self.pos
             f_length = np.linalg.norm(f)
